@@ -11,8 +11,13 @@ gem 'activerecord-jdbcmysql-adapter'
 gem 'jruby-openssl'
 gem 'json'
 
-group :development, :test do
+group :development do
 	gem 'rspec-rails'
+end
+
+group :test do
+	gem 'rspec-rails'
+	gem 'webrat'
 end
 
 # Gems used only for assets and not required
