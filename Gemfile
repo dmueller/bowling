@@ -5,7 +5,8 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'activerecord-jdbcsqlite3-adapter'
+# sqlite3 was giving me errors
+gem 'activerecord-jdbcmysql-adapter'
 
 gem 'jruby-openssl'
 gem 'json'
