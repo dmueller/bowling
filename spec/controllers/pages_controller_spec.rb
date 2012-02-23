@@ -7,6 +7,9 @@ describe PagesController do
     @base_title = "bowling | "
   end
 
+  # this should prbably be "foreach page/title in home/home, contact/contact.. do"
+  # instead of having the describe and pair of tests duplicated in each of these.
+
   describe "GET 'home'" do
     it "returns http success" do
       get 'home'
