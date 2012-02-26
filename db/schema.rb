@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20120211131811) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
