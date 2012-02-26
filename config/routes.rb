@@ -1,7 +1,5 @@
 Bowling::Application.routes.draw do
 
-  get "users/new"
-
   match "/signup", :to => 'users#new'
 
   match "/contact", :to => 'pages#contact'
@@ -11,10 +9,9 @@ Bowling::Application.routes.draw do
   # placeholder so that we have a signin_path
   match "/signin", :to => 'pages#signin'
 
-  resources :games
-
   resources :users
-
+  resources :games
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
